@@ -185,6 +185,11 @@ typedef NS_ENUM(NSInteger, MXPagerViewTransitionStyle) {
 @property (nonatomic, assign) CGFloat gutterWidth;
 
 /**
+ The scrolling content view.
+ */
+@property (nonatomic, readonly) UIScrollView *contentView;
+
+/**
  Returns the loaded pages.
  */
 @property (nonatomic, readonly, nullable) NSArray<__kindof UIView *> *loadedPages;
